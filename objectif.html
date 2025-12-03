@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Objectif</title>
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; font-family: 'Poppins', sans-serif; background: #1b1f3b; color: #fff; }
+
+    /* NAVIGATION */
+    nav {
+        width: 100%;
+        background: rgba(255,255,255,0.05);
+        border-bottom: 2px solid rgba(255,255,255,0.15);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(12px);
+    }
+
+    nav a {
+        color: #ffd700;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 8px 14px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-3px);
+    }
+
+    /* PAGE LAYOUT */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1200px;
+        height: 85vh;
+        gap: 40px;
+    }
+
+    /* Sections */
+    .career, .details {
+        background: rgba(255,255,255,0.05);
+        padding: 30px;
+        border-radius: 20px;
+        flex: 1;
+        overflow-y: auto;
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #ffd700;
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        line-height: 1.6em;
+        color: #e0e0e0;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: #ffd700;
+        color: #1b1f3b;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ffb700;
+        transform: scale(1.05);
+    }
+
+    /* Scrollbar */
+    .career::-webkit-scrollbar,
+    .details::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .career::-webkit-scrollbar-thumb,
+    .details::-webkit-scrollbar-thumb {
+        background: #ffd700;
+        border-radius: 3px;
+    }
+
+    @media(max-width: 900px) {
+        .container { flex-direction: column; height: auto; }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Couverture</a>
+    <a href="table-des-matieres.html">Sommaire</a>
+    <a href="objectif.html">Objectif</a>
+    <a href="competences.html">Compétences</a>
+    <a href="realisation.html">Réalisations</a>
+    <a href="annexes.html">Annexes</a>
+</nav>
+
+<div class="container">
+
+    <div class="career">
+        <h2>Objectif de carrière</h2>
+
+        <p>Mon objectif professionnel est de développer des compétences solides en développement web et en intelligence artificielle afin de rejoindre une équipe technologique innovante.</p>
+
+        <p>Je souhaite maîtriser des technologies modernes telles que HTML, CSS, JavaScript, Python et C/C++ afin de contribuer à des projets créatifs, efficaces et orientés vers l’avenir.</p>
+
+        <p>Je vise également à renforcer mes compétences en cybersécurité, optimisation de code et conception UI/UX afin de devenir un développeur polyvalent.</p>
+
+   
+    </div>
+
+    <div class="details">
+        <h2>Plan de développement</h2>
+
+        <p>Pour atteindre mes objectifs, je prévois de réaliser régulièrement des projets personnels et scolaires.</p>
+
+        <p>Je participerai à des hackathons, challenges et projets collaboratifs afin d’améliorer mon esprit d’équipe, ma créativité et ma capacité à résoudre des problèmes rapidement.</p>
+
+        <p>Une veille technologique constante me permettra de rester à jour sur les innovations, frameworks et tendances du développement moderne.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

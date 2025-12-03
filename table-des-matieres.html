@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table des matières</title>
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        background: #1b1f3b;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: rgba(255,255,255,0.05);
+        padding: 40px 50px;
+        border-radius: 25px;
+        width: 90%;
+        max-width: 900px;
+        text-align: center;
+        border: 2px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(12px);
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+        font-size: 2.8em;
+        color: #ffd700;
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .item {
+        background: rgba(255,255,255,0.07);
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        transition: 0.3s;
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .item:hover {
+        background: rgba(255,255,255,0.18);
+        transform: translateY(-5px);
+    }
+
+    .item h2 {
+        font-size: 1.4em;
+        color: #ffd700;
+        margin-bottom: 10px;
+    }
+
+    .item p {
+        font-size: 1em;
+        color: #ddd;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 22px;
+        background: #ffd700;
+        color: #1b1f3b;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ffb700;
+        transform: scale(1.05);
+    }
+
+    @media(max-width: 600px) {
+        h1 { font-size: 2.2em; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>📘 Table des Matières</h1>
+
+    <div class="menu">
+
+        <div class="item">
+            <h2>Page de couverture</h2>
+            <p>Présentation générale & identité</p>
+            <a href="index.html" class="btn">Ouvrir</a>
+        </div>
+
+        <div class="item">
+            <h2>Objectif</h2>
+            <p>Mes ambitions et mon projet professionnel</p>
+            <a href="objectif.html" class="btn">Ouvrir</a>
+        </div>
+
+        <div class="item">
+            <h2>Compétences</h2>
+            <p>Mes compétences techniques & personnelles</p>
+            <a href="competences.html" class="btn">Ouvrir</a>
+        </div>
+
+        <div class="item">
+            <h2>Réalisation</h2>
+            <p>Mes projets académiques & personnels</p>
+            <a href="realisation.html" class="btn">Ouvrir</a>
+        </div>
+
+        <div class="item">
+            <h2>Annexes</h2>
+            <p>Documents, certificats et preuves</p>
+            <a href="annexes.html" class="btn">Ouvrir</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

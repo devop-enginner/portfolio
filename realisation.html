@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations</title>
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; font-family: 'Poppins', sans-serif; background: #1b1f3b; color: #fff; }
+
+    /* NAVIGATION */
+    nav {
+        width: 100%;
+        background: rgba(255,255,255,0.05);
+        border-bottom: 2px solid rgba(255,255,255,0.15);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(12px);
+    }
+
+    nav a {
+        color: #ffd700;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 8px 14px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-3px);
+    }
+
+    /* PAGE LAYOUT */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 25px;
+        font-size: 2.5em;
+        color: #ffd700;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1250px;
+        height: 80vh;
+        gap: 30px;
+    }
+
+    .column {
+        background: rgba(255,255,255,0.05);
+        flex: 1;
+        padding: 25px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.15);
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* PROJECT CARDS */
+    .project-card {
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+
+    .project-card:hover {
+        background: rgba(255,255,255,0.2);
+        transform: translateY(-4px);
+    }
+
+    .project-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #ffd700;
+    }
+
+    .project-card p {
+        font-size: 1.05em;
+        line-height: 1.6em;
+        margin-bottom: 5px;
+    }
+
+    .project-card ul {
+        margin: 5px 0 10px 22px;
+    }
+
+    .project-card li {
+        margin-bottom: 4px;
+    }
+
+    a.btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 22px;
+        background: #ffd700;
+        color: #1b1f3b;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a.btn:hover {
+        background: #ffb700;
+        transform: scale(1.05);
+    }
+
+    /* Scroll bar */
+    .column::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .column::-webkit-scrollbar-thumb {
+        background: #ffd700;
+        border-radius: 3px;
+    }
+
+    @media(max-width: 900px) {
+        .container {
+            flex-direction: column;
+            height: auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Couverture</a>
+    <a href="table-des-matieres.html">Sommaire</a>
+    <a href="objectif.html">Objectif</a>
+    <a href="competences.html">Compétences</a>
+    <a href="realisation.html">Réalisations</a>
+    <a href="annexes.html">Annexes</a>
+</nav>
+
+<h1>Réalisations significatives</h1>
+
+<div class="container">
+
+    <!-- COLONNE 1 -->
+    <div class="column">
+        
+        <div class="project-card">
+            <h2>Site web scolaire</h2>
+            <p><strong>Contexte :</strong> Projet de fin de module en technologies web.</p>
+            <p><strong>Actions :</strong></p>
+            <ul>
+                <li>Maquettage & prototypage du design</li>
+                <li>Développement HTML, CSS, JavaScript</li>
+                <li>Optimisation responsive (mobile, tablette)</li>
+            </ul>
+            <p><strong>Résultat :</strong> Note : <b>95%</b>. Site moderne, fonctionnel et validé sur plusieurs navigateurs.</p>
+            <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Application mobile de gestion de tâches</h2>
+            <p><strong>Contexte :</strong> Projet personnel pour apprendre Android.</p>
+            <p><strong>Actions :</strong></p>
+            <ul>
+                <li>Design UX/UI intuitif</li>
+                <li>Développement Java/Kotlin</li>
+                <li>Notifications & stockage local</li>
+            </ul>
+            <p><strong>Résultat :</strong> Application fonctionnelle et utilisée dans un cadre personnel.</p>
+            <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Logiciel de gestion de stock</h2>
+            <p><strong>Contexte :</strong> Projet académique en Python.</p>
+            <p><strong>Actions :</strong></p>
+            <ul>
+                <li>Gestion des entrées/sorties</li>
+                <li>Automatisation des rapports</li>
+                <li>Optimisation de la base de données</li>
+            </ul>
+            <p><strong>Résultat :</strong> Logiciel entièrement opérationnel et validé par le professeur.</p>
+            <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+    </div>
+
+    <!-- COLONNE 2 -->
+    <div class="column">
+
+        <div class="project-card">
+            <h2>Jeu éducatif Python</h2>
+            <p><strong>Contexte :</strong> Projet personnel pour progresser en Python.</p>
+            <ul>
+                <li>Création de niveaux & challenges</li>
+                <li>Logique de jeu complète</li>
+                <li>Interface simple</li>
+            </ul>
+            <p><strong>Résultat :</strong> Jeu fonctionnel utilisé par des étudiants.</p>
+            <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Application de prise de notes</h2>
+            <p><strong>Contexte :</strong> Projet web simple et utile.</p>
+            <ul>
+                <li>Développement HTML/CSS/JS</li>
+                <li>Stockage local</li>
+                <li>Interface épurée</li>
+            </ul>
+            <p><strong>Résultat :</strong> Application pratique et fluide.</p>
+            <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

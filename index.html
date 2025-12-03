@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page de Couverture</title>
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: 'Poppins', sans-serif; overflow: hidden; }
+
+    body {
+        background: url('hero-bg.jpg') center/cover no-repeat;
+        position: relative;
+        color: #fff;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(27, 31, 59, 0.75);
+        z-index: 1;
+    }
+
+    .hero {
+        position: relative;
+        z-index: 2;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Photo de profil */
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #ffd700;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+    }
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 2.8em;
+        color: #ffd700;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    /* Paragraphe encadré stylé */
+    .highlight-paragraph {
+        background: rgba(255, 215, 0, 0.05);
+        border: 2px solid #ffd700;
+        border-radius: 15px;
+        padding: 15px 20px;
+        max-width: 700px;
+        box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+        backdrop-filter: blur(10px);
+        margin-bottom: 20px;
+    }
+
+    .highlight-paragraph p {
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #fff9dc;
+    }
+
+    /* Menu navigation */
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        background: rgba(255,255,255,0.15);
+        border: 1px solid rgba(255,255,255,0.25);
+        padding: 8px 15px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #ffd700;
+        font-weight: 600;
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+        font-size: 0.9em;
+    }
+
+    .btn:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+
+    /* Contact intégré réduit */
+    .contact-box {
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 500px;
+        border: 1px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        font-size: 0.9em;
+    }
+
+    .contact-box h3 {
+        font-size: 1.2em;
+        color: #ffd700;
+        margin-bottom: 10px;
+    }
+
+    .contact-item {
+        margin-bottom: 5px;
+    }
+
+    .contact-item span {
+        color: #ffd700;
+        font-weight: bold;
+    }
+
+    @media(max-width: 800px) {
+        h1 { font-size: 2.2em; }
+        h2 { font-size: 1.2em; }
+        .highlight-paragraph { padding: 10px 15px; max-width: 90%; }
+        .highlight-paragraph p { font-size: 0.9em; }
+        .btn { font-size: 0.8em; padding: 6px 10px; }
+        .contact-box { font-size: 0.8em; max-width: 90%; padding: 15px; }
+        .profile-photo { width: 120px; height: 120px; }
+    }
+</style>
+</head>
+
+<body>
+<div class="hero">
+
+    <!-- Photo de profil -->
+    <div class="profile-photo">
+        <img src="Capture d’écran_3-12-2025_18548_www.pinterest.com.jpeg" alt="Photo de Ahlem Bensaid">
+    </div>
+
+    <!-- Nom et titre -->
+    <h1>AHLEM HOUARI</h1>
+    <h2>Ingénieure en intelligence artificielle | Développement web & innovation technologique</h2>
+
+
+    <!-- Paragraphe encadré stylé -->
+    <div class="highlight-paragraph">
+        <p>
+            Passion pour l’intelligence artificielle et l’innovation technologique, avec pour objectif de transformer les idées complexes en solutions concrètes et impactantes. Ce portfolio présente un univers où créativité et rigueur se rencontrent, révélant des projets qui repoussent les frontières de la technologie et exploitent le potentiel des données pour créer de la valeur réelle.
+        </p>
+    </div>
+
+    <!-- Menu navigation -->
+    <div class="menu">
+        <a href="table-des-matieres.html" class="btn">Table des matières</a>
+        <a href="objectif.html" class="btn">Objectif</a>
+        <a href="competences.html" class="btn">Compétences</a>
+        <a href="realisation.html" class="btn">Réalisations</a>
+        <a href="annexes.html" class="btn">Annexes</a>
+    </div>
+
+    <!-- Contact réduit -->
+    <div class="contact-box">
+        <h3>Contact</h3>
+        <div class="contact-item"><span>Email :</span> ahlem@gmail.com</div>
+        <div class="contact-item"><span>Téléphone :</span> +212 6 22 12 55 68</div>
+        <div class="contact-item"><span>LinkedIn :</span> https://linkedin.com/in/ahlem</div>
+        <div class="contact-item"><span>GitHub :</span> https://github.com/ahlem</div>
+    </div>
+
+</div>
+</body>
+</html>

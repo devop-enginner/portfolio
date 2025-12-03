@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annexes</title>
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { font-family: 'Poppins', sans-serif; background: #1b1f3b; color: #fff; }
+
+    nav {
+        width: 100%;
+        background: rgba(255,255,255,0.05);
+        border-bottom: 2px solid rgba(255,255,255,0.15);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(15px);
+    }
+    nav a {
+        color: #ffd700;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 8px 14px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-3px);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        color: #ffd700;
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .annexe {
+        background: rgba(255,255,255,0.08);
+        border: 2px solid rgba(255,255,255,0.15);
+        padding: 20px;
+        border-radius: 18px;
+        backdrop-filter: blur(12px);
+        text-align: center;
+        transition: 0.3s;
+    }
+    .annexe:hover {
+        transform: translateY(-5px);
+        background: rgba(255,255,255,0.15);
+    }
+
+    .annexe img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    .annexe h3 {
+        color: #ffd700;
+        margin-bottom: 10px;
+    }
+
+    .annexe p {
+        color: #ddd;
+        font-size: 0.95em;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background: #ffd700;
+        color: #1b1f3b;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s;
+        display: inline-block;
+    }
+    .btn:hover {
+        background: #ffb700;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Couverture</a>
+    <a href="table-des-matieres.html">Sommaire</a>
+    <a href="objectif.html">Objectif</a>
+    <a href="competences.html">Compétences</a>
+    <a href="realisation.html">Réalisations</a>
+    <a href="annexes.html">Annexes</a>
+</nav>
+
+<div class="container">
+    <h1>Annexes</h1>
+
+    <div class="grid">
+         <div class="annexe">
+            <h3>CV</h3>
+            <p>Cliquez pour voir le CV complet :</p>
+            <a href="cv.html" class="btn">Voir CV</a>
+            
+        </div>
+
+        <!-- Certification HTML -->
+        <div class="annexe">
+            
+            <h3>Certification HTML</h3>
+            <p>Certification obtenue sur OpenClassrooms.</p>
+            <a href="certificat-html.pdf" class="btn">Voir</a>
+        </div>
+
+        <!-- Certificat Coursera IA -->
+        <div class="annexe">
+          
+            <h3>Certification IA</h3>
+            <p>Formation "Introduction à l'IA" sur Coursera.</p>
+            <a href="certificat-coursera-ia.pdf" class="btn">Voir</a>
+        </div>
+
+        <!-- Certificat Coursera ML -->
+        <div class="annexe">
+    
+            <h3>Certification Machine Learning</h3>
+            <p>Formation "Machine Learning" sur Coursera.</p>
+            <a href="certificat-coursera-ml.pdf" class="btn">Voir</a>
+        </div>
+
+        <!-- Certificat Coursera DL -->
+        <div class="annexe">
+            
+            <h3>Certification Deep Learning</h3>
+            <p>Formation "Deep Learning" sur Coursera.</p>
+            <a href="certificat-coursera-dl.pdf" class="btn">Voir</a>
+        </div>
+
+        <!-- Répertoire GitHub -->
+        <div class="annexe">
+          
+            <h3>Répertoire GitHub</h3>
+            <p>Code source complet de mes projets.</p>
+            <a href="#" class="btn">Voir</a>
+        </div>
+
+        
+    </div>
+</div>
+
+</body>
+</html>
